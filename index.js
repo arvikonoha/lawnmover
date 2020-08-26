@@ -18,7 +18,6 @@ const {
 (async function () {
   let browser = await puppeteer.launch({
     headless: false,
-    args: ["--window-size=1440,500"],
   });
   let page = await browser.newPage();
 
@@ -26,8 +25,8 @@ const {
     waitUntil: "networkidle0",
   });
 
-  await inputType(USERNAME_INPUT, "your-username", page);
-  await inputType(PASSWORD_INPUT, "your-password", page);
+  await inputType(USERNAME_INPUT, process.argv[2], page);
+  await inputType(PASSWORD_INPUT, process.argv[3], page);
 
   await waitAndClick(SUBMIT_BUTTON, page);
 
