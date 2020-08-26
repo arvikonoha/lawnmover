@@ -1,5 +1,5 @@
 # lawnmover
-Node js program to scrape  instagram data and display whether people that you follow followback or not
+Node js program to scrape  instagram data and display followers - following comparision
 
 ## usage
 
