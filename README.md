@@ -4,3 +4,5 @@ Node js program to scrape  instagram data and display followers - following comp
 ## usage
 
 node index *username* *password*
+
+Does'nt work anymore instagram said .... you for some reason.
